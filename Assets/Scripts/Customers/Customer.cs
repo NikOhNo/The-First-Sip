@@ -4,10 +4,11 @@ using TMPro;
 using Unity.VisualScripting;
 using UnityEditor.Rendering;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 
 
-public class Customer : MonoBehaviour
+public class Customer : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
     public class CombinedDrink
     {
@@ -28,18 +29,31 @@ public class Customer : MonoBehaviour
     public SpriteRenderer spriteRenderer;
     public TextMeshPro speechText;
 
+    public BoxCollider2D boxCollider;
+
     public float difficulty = 1.0f; // 1.0 by default
-    public float maxWaitTime; // set upon start()ing
+    public float maxWaitTime = 10.0f; // also set upon start()ing
     public float currentWaitTime = 0.0f;
 
     // Start is called before the first frame update
-    void Start()
+    private void Awake()
     {
         maxWaitTime = difficulty * 10.0f;
+    }
+    void Start()
+    {
+        boxCollider = GetComponent<BoxCollider2D>();
+        boxCollider.size = spriteRenderer.size;
+        Debug.Log(maxWaitTime);
         // get a random customer data container from Assets/Resources/_CustomerData
         CustomerDataScriptableObject[] customerDatas = Resources.LoadAll<CustomerDataScriptableObject>("_CustomerData");
         customerData = customerDatas[Random.Range(0, customerDatas.Length)];
         Debug.Log($"customer data: {customerData.request}, {customerData.bodyRatio}, {customerData.mindRatio}, {customerData.soulRatio}");
+
+        // get a random sprite from Assets/Resources/CustomerSprites
+        Sprite[] customerSprites = Resources.LoadAll<Sprite>("CustomerSprites");
+        spriteRenderer.sprite = customerSprites[Random.Range(0, customerSprites.Length)];
+        
         EnterBar();
     }
 
@@ -47,8 +61,11 @@ public class Customer : MonoBehaviour
     void Update()
     {
         currentWaitTime += Time.deltaTime;
+        //Debug.Log(currentWaitTime);
+        
         if (currentWaitTime > maxWaitTime)
         {
+            currentWaitTime = 0.0f;
             LeaveBar(true);
         }
     }
@@ -93,5 +110,15 @@ public class Customer : MonoBehaviour
     public void LeaveBar(bool timedOut = false)
     {
         Destroy(gameObject);
+    }
+
+    public void OnPointerEnter(PointerEventData eventData)
+    {
+        speechText.enabled = true;
+    }
+
+    public void OnPointerExit(PointerEventData eventData)
+    {
+        speechText.enabled = false;
     }
 }
