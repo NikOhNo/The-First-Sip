@@ -8,7 +8,7 @@ public class DraggableObj : MonoBehaviour, IBeginDragHandler, IDragHandler, IEnd
     private Vector3 offset;    // Offset between the object's position and the mouse position
     Rigidbody2D rigidbody2D;
 
-    private void Awake()
+    protected virtual void Awake()
     {
         rigidbody2D = GetComponent<Rigidbody2D>();
     }
