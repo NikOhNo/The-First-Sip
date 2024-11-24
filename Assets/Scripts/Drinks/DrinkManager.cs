@@ -6,8 +6,8 @@ public class DrinkManager : MonoBehaviour
 {
     public static DrinkManager Instance { get; private set; }
 
-    public Drink drink1;
-    public Drink drink2;
+    DrinkDataSO drink1;
+    DrinkDataSO drink2;
 
     private void Awake()
     {
@@ -27,8 +27,10 @@ public class DrinkManager : MonoBehaviour
     /// (ie: stage red, stage blue, stage green - red discarded)
     /// </summary>
     /// <param name="newDrink"></param>
-    public void StageDrink(Drink newDrink)
+    public void StageDrink(DrinkDataSO newDrink)
     {
+        Debug.Log("Staging: " + newDrink.DrinkName);
+
         drink2 = drink1;
         drink1 = newDrink;
     }
@@ -43,8 +45,7 @@ public class DrinkManager : MonoBehaviour
             return;
         }
 
-        EffectManager.Instance.MakeEffect(drink1, drink2);
-
-        // send drink to customer? called in this function or a different one? how would you know what customer to send it to
+        var newEffect = EffectManager.Instance.MakeEffect(drink1, drink2);
+        Debug.Log("Made Effect: " + newEffect.EffectName);
     }
 }

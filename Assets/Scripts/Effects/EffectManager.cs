@@ -2,16 +2,15 @@ using JetBrains.Annotations;
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class EffectManager : MonoBehaviour
 {
     public static EffectManager Instance { get; private set; }
-
-    [SerializeField] List<EffectDataSO> effects = new();
     [SerializeField] List<GameObject> effectPrefabs = new();
 
-    readonly List<Effect> activeEffects = new();
+    public readonly List<Effect> activeEffects = new();
 
     private void Awake()
     {
@@ -25,6 +24,7 @@ public class EffectManager : MonoBehaviour
         }
     }
 
+    /*
     private void Update()
     {
         foreach (Effect effect in activeEffects)
@@ -32,20 +32,21 @@ public class EffectManager : MonoBehaviour
             effect.OnEffect();
         }
     }
+    */
 
     /// <summary>
     /// iterates through all effects and makes the one with a matching recipe
     /// </summary>
-    public Effect MakeEffect(Drink drink1, Drink drink2)
+    public Effect MakeEffect(DrinkDataSO drink1, DrinkDataSO drink2)
     {
-        foreach (EffectDataSO effect in effects)
+        foreach (Effect effect in effectPrefabs.Select(prefab => prefab.GetComponent<Effect>()))
         {
-            foreach (Recipe recipe in effect.Recipes)
+            foreach (var recipe in effect.effectData.Recipes)
             {
                 if (recipe.CanMakeWith(drink1, drink2))
                 {
                     return MakeEffect(effect);
-                }    
+                }
             }
         }
 
@@ -57,20 +58,10 @@ public class EffectManager : MonoBehaviour
     /// Makes an effect from data & initializes it
     /// </summary>
     /// <returns></returns>
-    public Effect MakeEffect(EffectDataSO data)
+    public Effect MakeEffect(Effect effect)
     {
-        foreach (var effectPrefab in effectPrefabs)
-        {
-            Effect effect = effectPrefab.GetComponent<Effect>();
-            if (effect.effectData == data)
-            {
-                Effect newEffect = Instantiate(effectPrefab, transform).GetComponent<Effect>();
-                newEffect.InitializeEffect();
-                return newEffect;
-            }
-        }
+        Effect newEffect = Instantiate(effect, transform).GetComponent<Effect>();
+        return newEffect;
 
-        Debug.LogError($"Could not find effect prefab with data: \"{data.name}\"");
-        return null;
     }
 }
