@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b806f51a147ccb34fb3f44503d5690b0, type: 3}
+  m_Name: 10. Dreamer
+  m_EditorClassIdentifier: 
+  EffectName: Dreamer's Eyes
+  Duration: 0
+  FlavorText: Prismatic infinities rest beyond the horizon, waiting for a chance
+  Recipes:
+  - drink1: {fileID: 11400000, guid: a2553786b6dc56d4c9344054659c9aaf, type: 2}
+    drink2: {fileID: 11400000, guid: 1129be3128d3d9c449dec511df1d5990, type: 2}
+  - drink1: {fileID: 11400000, guid: 9d8db76544ad7384f8c6d0f9f72f0d75, type: 2}
+    drink2: {fileID: 11400000, guid: b7977638c14bd6d44a7a8f5e8e480ef7, type: 2}
+  - drink1: {fileID: 11400000, guid: bc421b01d1b2c9f448a8313c7a396624, type: 2}
+    drink2: {fileID: 11400000, guid: d804d14758bf10f438e47db446f1611e, type: 2}
+  - drink1: {fileID: 11400000, guid: bc421b01d1b2c9f448a8313c7a396624, type: 2}
+    drink2: {fileID: 11400000, guid: d9bbb06543f679a40a784716435c374c, type: 2}
+  - drink1: {fileID: 11400000, guid: bc421b01d1b2c9f448a8313c7a396624, type: 2}
+    drink2: {fileID: 11400000, guid: a9c54e7a38143f44dae1b71756c83377, type: 2}
+  - drink1: {fileID: 11400000, guid: d804d14758bf10f438e47db446f1611e, type: 2}
+    drink2: {fileID: 11400000, guid: b8822c944079fe64cad1eeb9e73c4e2d, type: 2}
+  - drink1: {fileID: 11400000, guid: b7977638c14bd6d44a7a8f5e8e480ef7, type: 2}
+    drink2: {fileID: 11400000, guid: b8822c944079fe64cad1eeb9e73c4e2d, type: 2}
+  - drink1: {fileID: 11400000, guid: 6c5932d0b4a743f4393eaf98caa839bb, type: 2}
+    drink2: {fileID: 11400000, guid: 36d34f5de25fac949bbec11c6ad6ed18, type: 2}
+  - drink1: {fileID: 11400000, guid: 6c5932d0b4a743f4393eaf98caa839bb, type: 2}
+    drink2: {fileID: 11400000, guid: a9c54e7a38143f44dae1b71756c83377, type: 2}
+  - drink1: {fileID: 11400000, guid: 1129be3128d3d9c449dec511df1d5990, type: 2}
+    drink2: {fileID: 11400000, guid: 2d115fcceec15aa4cb9209a999da4c4f, type: 2}
+  - drink1: {fileID: 11400000, guid: 2d115fcceec15aa4cb9209a999da4c4f, type: 2}
+    drink2: {fileID: 11400000, guid: 2d115fcceec15aa4cb9209a999da4c4f, type: 2}

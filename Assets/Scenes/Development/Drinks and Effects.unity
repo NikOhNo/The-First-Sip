@@ -508,6 +508,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Effect Manager
       objectReference: {fileID: 0}
+    - target: {fileID: 4321832626999596105, guid: dd9ae092da78308469f2ef0a3324dbd9, type: 3}
+      propertyPath: effects.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4321832626999596105, guid: dd9ae092da78308469f2ef0a3324dbd9, type: 3}
+      propertyPath: effects.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: 67f6f34067aa45a4881b8c0863a870d1, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
