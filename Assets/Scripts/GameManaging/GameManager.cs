@@ -42,12 +42,14 @@ public class GameManager : MonoBehaviour
         Debug.Log($"sending customer {customer}");
         var component = customerSlots.GetComponent<CustomerSlotManager>();
 
-        var slot = component.FindOpenSlot();
-        slot.GetComponent<CustomerSlot>().customer = customer;
+        CustomerManager.Instance.customerQueue.Enqueue(customer);
+        var slot = component.AddCustomer(customer);
+
+        //var slot = component.FindOpenSlot();
+        //slot.GetComponent<CustomerSlot>().customer = customer;
         //customer.transform.parent = slot.transform;
         customer.transform.position = slot.transform.position;
         customer.transform.position = new Vector3(customer.transform.position.x, customer.transform.position.y, 0.0f);
-        //customer.transform.position = new Vector2(0.0f, 0.0f);
  
         customerDict.Add(customer.GetInstanceID(), customer); // maybe don't use instance id to index into the dict
     }

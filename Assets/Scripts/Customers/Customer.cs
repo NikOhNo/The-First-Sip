@@ -117,6 +117,8 @@ public class Customer : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 
     public void LeaveBar(bool timedOut = false)
     {
+        CustomerManager.Instance.customerQueue.Dequeue();
+        GameObject.Find("CustomerSlots").GetComponent<CustomerSlotManager>().RemoveFrontCustomer();
         Destroy(gameObject);
     }
 
