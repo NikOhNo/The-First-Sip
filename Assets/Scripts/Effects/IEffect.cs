@@ -9,7 +9,6 @@ public interface IEffect
     float Duration { get; }
     
 
-    bool ValidRecipe(Drink drink1, Drink drink2);
     void InitializeEffect();
     void OnEffect();
     void CompleteEffect();

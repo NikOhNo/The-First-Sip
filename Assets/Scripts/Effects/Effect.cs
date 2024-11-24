@@ -13,6 +13,4 @@ public abstract class Effect : MonoBehaviour, IEffect
     public abstract void InitializeEffect();
     public abstract void OnEffect();
     public abstract void CompleteEffect();
-
-    public abstract bool ValidRecipe(Drink drink1, Drink drink2);
 }
