@@ -16,7 +16,7 @@ public class Customer : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
         public float Mind;
         public float Soul;
 
-        public CombinedDrink(Drink d1, Drink d2)
+        public CombinedDrink(DrinkDataSO d1, DrinkDataSO d2)
         {
             // i think this is how you combine ratios.
             Body = (d1.Body + d2.Body) / 2;

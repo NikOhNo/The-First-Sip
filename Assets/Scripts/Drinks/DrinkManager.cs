@@ -6,8 +6,8 @@ public class DrinkManager : MonoBehaviour
 {
     public static DrinkManager Instance { get; private set; }
 
-    DrinkDataSO drink1;
-    DrinkDataSO drink2;
+    public DrinkDataSO drink1;
+    public DrinkDataSO drink2;
 
     private void Awake()
     {
