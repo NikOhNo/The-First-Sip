@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class CustomerSlotManager : MonoBehaviour
-{
+{ 
     public GameObject FindOpenSlot()
     {
         foreach (var c in GetComponentsInChildren<CustomerSlot>())
@@ -29,7 +29,7 @@ public class CustomerSlotManager : MonoBehaviour
                     slotToEvict = c.gameObject;
                 }
             }
-            
+
         }
         slotToEvict.GetComponent<CustomerSlot>().customer.GetComponent<Customer>().LeaveBar(true); // force them to leave
         slotToEvict.GetComponent<CustomerSlot>().customer = null;

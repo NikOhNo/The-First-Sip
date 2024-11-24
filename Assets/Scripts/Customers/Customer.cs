@@ -5,6 +5,7 @@ using Unity.VisualScripting;
 using UnityEditor.Rendering;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.UIElements;
 
 
 
@@ -29,6 +30,8 @@ public class Customer : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
     public SpriteRenderer spriteRenderer;
     public TextMeshPro speechText;
 
+    public GameObject speechContainer;
+
     public BoxCollider2D boxCollider;
 
     public float difficulty = 1.0f; // 1.0 by default
@@ -43,7 +46,10 @@ public class Customer : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
     void Start()
     {
         boxCollider = GetComponent<BoxCollider2D>();
-        boxCollider.size = spriteRenderer.size;
+        spriteRenderer = GetComponent<SpriteRenderer>();
+
+        //boxCollider.size = spriteRenderer.sprite.textureRect.size;
+        
         Debug.Log(maxWaitTime);
         // get a random customer data container from Assets/Resources/_CustomerData
         CustomerDataScriptableObject[] customerDatas = Resources.LoadAll<CustomerDataScriptableObject>("_CustomerData");
@@ -53,6 +59,7 @@ public class Customer : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
         // get a random sprite from Assets/Resources/CustomerSprites
         Sprite[] customerSprites = Resources.LoadAll<Sprite>("CustomerSprites");
         spriteRenderer.sprite = customerSprites[Random.Range(0, customerSprites.Length)];
+        
         
         EnterBar();
     }
@@ -97,6 +104,7 @@ public class Customer : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
         // slide over from left side of the screen or something very silly-ly
         //transform.position = new Vector3(0.0f, 0.0f, 0.0f);
         speechText.text = customerData.request;
+
     }
 
 
@@ -114,11 +122,14 @@ public class Customer : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 
     public void OnPointerEnter(PointerEventData eventData)
     {
+        //speechContainer.SetActive(true);
         speechText.enabled = true;
+        Debug.Log("BEANS");
     }
 
     public void OnPointerExit(PointerEventData eventData)
     {
+        //speechContainer.SetActive(false);
         speechText.enabled = false;
     }
 }

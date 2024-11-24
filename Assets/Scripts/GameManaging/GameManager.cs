@@ -37,7 +37,6 @@ public class GameManager : MonoBehaviour
 
     void SendCustomer()
     {
-
         // just create a customer
         GameObject customer = Instantiate(customerPrefab);
         Debug.Log($"sending customer {customer}");
