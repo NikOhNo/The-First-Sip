@@ -6,8 +6,8 @@ public class DrinkManager : MonoBehaviour
 {
     public static DrinkManager Instance { get; private set; }
 
-    Drink drink1;
-    Drink drink2;
+    public Drink drink1;
+    public Drink drink2;
 
     private void Awake()
     {
@@ -44,5 +44,7 @@ public class DrinkManager : MonoBehaviour
         }
 
         EffectManager.Instance.MakeEffect(drink1, drink2);
+
+        // send drink to customer? called in this function or a different one? how would you know what customer to send it to
     }
 }
