@@ -9,7 +9,7 @@ public class EffectDataSO : ScriptableObject
     public float Duration;
     public string FlavorText;
 
-    public List<Recipe> Recipes;
+    public List<Recipe> Recipes = new();
 }
 
 [System.Serializable]
@@ -18,13 +18,13 @@ public class Recipe
     public DrinkDataSO drink1;
     public DrinkDataSO drink2;
 
-    public bool CanMakeWith(Drink drink1, Drink drink2)
+    public bool CanMakeWith(DrinkDataSO drink1, DrinkDataSO drink2)
     {
-        if (drink1.drinkData == this.drink1 && drink2.drinkData == this.drink2)
+        if (drink1 == this.drink1 && drink2 == this.drink2)
         {
             return true;
         }
-        else if (drink2.drinkData == this.drink1 && drink1.drinkData == this.drink2)
+        else if (drink2 == this.drink1 && drink1 == this.drink2)
         {
             return true;
         }

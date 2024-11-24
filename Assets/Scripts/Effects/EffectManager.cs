@@ -10,7 +10,7 @@ public class EffectManager : MonoBehaviour
     public static EffectManager Instance { get; private set; }
     [SerializeField] List<GameObject> effectPrefabs = new();
 
-    readonly List<Effect> activeEffects = new();
+    public readonly List<Effect> activeEffects = new();
 
     private void Awake()
     {
@@ -24,6 +24,7 @@ public class EffectManager : MonoBehaviour
         }
     }
 
+    /*
     private void Update()
     {
         foreach (Effect effect in activeEffects)
@@ -31,11 +32,12 @@ public class EffectManager : MonoBehaviour
             effect.OnEffect();
         }
     }
+    */
 
     /// <summary>
     /// iterates through all effects and makes the one with a matching recipe
     /// </summary>
-    public Effect MakeEffect(Drink drink1, Drink drink2)
+    public Effect MakeEffect(DrinkDataSO drink1, DrinkDataSO drink2)
     {
         foreach (Effect effect in effectPrefabs.Select(prefab => prefab.GetComponent<Effect>()))
         {
@@ -59,7 +61,6 @@ public class EffectManager : MonoBehaviour
     public Effect MakeEffect(Effect effect)
     {
         Effect newEffect = Instantiate(effect, transform).GetComponent<Effect>();
-        newEffect.InitializeEffect();
         return newEffect;
 
     }
