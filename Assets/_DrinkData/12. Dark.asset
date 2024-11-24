@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DrinkName: Dark Matter Mead
   FlavorText: 
+  Sprite: {fileID: 21300000, guid: f4c8911613670094f945589385896add, type: 3}
   Mind: 0
   Body: 0
   Soul: 0

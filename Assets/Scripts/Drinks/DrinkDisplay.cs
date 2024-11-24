@@ -4,21 +4,41 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class DrinkDisplay : DraggableObj, IPointerClickHandler
+public class DrinkDisplay : DraggableObj, IPointerDownHandler, IPointerUpHandler, IPointerEnterHandler, IPointerExitHandler
 {
     [SerializeField] DrinkDataSO drinkData;
     [SerializeField] float clickMagnitudeThreshold = 5;
+    [SerializeField] float clickTimeThreshold = .2f;
+
+    float clickTimeStart;
+    float clickTimeEnd;
 
     RectTransform rectTransform;
     TMP_Text text;
     SpriteRenderer spriteRenderer;
 
-    public void OnPointerClick(PointerEventData eventData)
+    public void OnPointerEnter(PointerEventData eventData)
     {
-        if (eventData.delta.magnitude < clickMagnitudeThreshold)
+        text.enabled = true;
+    }
+    public void OnPointerExit(PointerEventData eventData)
+    {
+        text.enabled = false;
+    }
+
+    public void OnPointerDown(PointerEventData eventData)
+    {
+        clickTimeStart = Time.time;
+    }
+    public void OnPointerUp(PointerEventData eventData)
+    {
+        clickTimeEnd = Time.time;
+
+        float clickTime = clickTimeEnd - clickTimeStart;
+        if (eventData.delta.magnitude < clickMagnitudeThreshold && clickTime < clickTimeThreshold)
         {
             // TODO: stage the drink
-            Debug.Log("click!");
+            DrinkManager.Instance.StageDrink(drinkData);
         }
     }
 
@@ -32,6 +52,8 @@ public class DrinkDisplay : DraggableObj, IPointerClickHandler
 
         text.text = drinkData.DrinkName;
         spriteRenderer.sprite = drinkData.Sprite;
+
+        text.enabled = false;
     }
 
 
