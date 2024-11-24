@@ -12,7 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b806f51a147ccb34fb3f44503d5690b0, type: 3}
   m_Name: 21. Afterlife
   m_EditorClassIdentifier: 
-  EffectName: 
+  EffectName: Afterlife's Ease
   Duration: 0
-  FlavorText: 
-  Recipes: []
+  FlavorText: Ease your weary soul, this is your stop
+  Recipes:
+  - drink1: {fileID: 11400000, guid: a1052ec3a267a6347952447e7e38ffd5, type: 2}
+    drink2: {fileID: 11400000, guid: a1052ec3a267a6347952447e7e38ffd5, type: 2}
+  - drink1: {fileID: 11400000, guid: 0eafe218e4b4b074e9463f57d39b19a4, type: 2}
+    drink2: {fileID: 11400000, guid: b8822c944079fe64cad1eeb9e73c4e2d, type: 2}
+  - drink1: {fileID: 11400000, guid: b8822c944079fe64cad1eeb9e73c4e2d, type: 2}
+    drink2: {fileID: 11400000, guid: b8822c944079fe64cad1eeb9e73c4e2d, type: 2}

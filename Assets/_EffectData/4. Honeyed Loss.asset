@@ -12,7 +12,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b806f51a147ccb34fb3f44503d5690b0, type: 3}
   m_Name: 4. Honeyed Loss
   m_EditorClassIdentifier: 
-  EffectName: 
+  EffectName: Honeyed Loss
   Duration: 0
-  FlavorText: 
-  Recipes: []
+  FlavorText: The pain that siphons your grief shall one day wilt
+  Recipes:
+  - drink1: {fileID: 11400000, guid: 9d8db76544ad7384f8c6d0f9f72f0d75, type: 2}
+    drink2: {fileID: 11400000, guid: d3ed947187a5e6a47b21373e56268e7f, type: 2}
+  - drink1: {fileID: 11400000, guid: d804d14758bf10f438e47db446f1611e, type: 2}
+    drink2: {fileID: 11400000, guid: d3ed947187a5e6a47b21373e56268e7f, type: 2}
+  - drink1: {fileID: 11400000, guid: bc421b01d1b2c9f448a8313c7a396624, type: 2}
+    drink2: {fileID: 11400000, guid: b8822c944079fe64cad1eeb9e73c4e2d, type: 2}
+  - drink1: {fileID: 11400000, guid: d804d14758bf10f438e47db446f1611e, type: 2}
+    drink2: {fileID: 11400000, guid: 0eafe218e4b4b074e9463f57d39b19a4, type: 2}
+  - drink1: {fileID: 11400000, guid: d804d14758bf10f438e47db446f1611e, type: 2}
+    drink2: {fileID: 11400000, guid: 2c28348832f901c468f8dd91ed19c468, type: 2}
+  - drink1: {fileID: 11400000, guid: a260cc9f216e128458aad4e066d7c24b, type: 2}
+    drink2: {fileID: 11400000, guid: a9c54e7a38143f44dae1b71756c83377, type: 2}
+  - drink1: {fileID: 11400000, guid: b8822c944079fe64cad1eeb9e73c4e2d, type: 2}
+    drink2: {fileID: 11400000, guid: 2d115fcceec15aa4cb9209a999da4c4f, type: 2}

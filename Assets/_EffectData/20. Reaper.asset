@@ -12,7 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b806f51a147ccb34fb3f44503d5690b0, type: 3}
   m_Name: 20. Reaper
   m_EditorClassIdentifier: 
-  EffectName: 
+  EffectName: Reaper's Love
   Duration: 0
-  FlavorText: 
-  Recipes: []
+  FlavorText: You will live, you have no choice
+  Recipes:
+  - drink1: {fileID: 11400000, guid: a1052ec3a267a6347952447e7e38ffd5, type: 2}
+    drink2: {fileID: 11400000, guid: bc421b01d1b2c9f448a8313c7a396624, type: 2}
+  - drink1: {fileID: 11400000, guid: a1052ec3a267a6347952447e7e38ffd5, type: 2}
+    drink2: {fileID: 11400000, guid: a9c54e7a38143f44dae1b71756c83377, type: 2}
+  - drink1: {fileID: 11400000, guid: d9bbb06543f679a40a784716435c374c, type: 2}
+    drink2: {fileID: 11400000, guid: b8822c944079fe64cad1eeb9e73c4e2d, type: 2}
+  - drink1: {fileID: 11400000, guid: d9bbb06543f679a40a784716435c374c, type: 2}
+    drink2: {fileID: 11400000, guid: 2c28348832f901c468f8dd91ed19c468, type: 2}

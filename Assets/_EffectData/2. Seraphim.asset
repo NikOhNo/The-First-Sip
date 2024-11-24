@@ -12,7 +12,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b806f51a147ccb34fb3f44503d5690b0, type: 3}
   m_Name: 2. Seraphim
   m_EditorClassIdentifier: 
-  EffectName: 
+  EffectName: Seraphim's Gaze
   Duration: 0
-  FlavorText: 
-  Recipes: []
+  FlavorText: O' beast of whim and worship, name my sins
+  Recipes:
+  - drink1: {fileID: 11400000, guid: a2553786b6dc56d4c9344054659c9aaf, type: 2}
+    drink2: {fileID: 11400000, guid: 9d8db76544ad7384f8c6d0f9f72f0d75, type: 2}
+  - drink1: {fileID: 11400000, guid: 9d8db76544ad7384f8c6d0f9f72f0d75, type: 2}
+    drink2: {fileID: 11400000, guid: d804d14758bf10f438e47db446f1611e, type: 2}
+  - drink1: {fileID: 11400000, guid: 9d8db76544ad7384f8c6d0f9f72f0d75, type: 2}
+    drink2: {fileID: 11400000, guid: b8822c944079fe64cad1eeb9e73c4e2d, type: 2}
+  - drink1: {fileID: 11400000, guid: a260cc9f216e128458aad4e066d7c24b, type: 2}
+    drink2: {fileID: 11400000, guid: 2d115fcceec15aa4cb9209a999da4c4f, type: 2}
+  - drink1: {fileID: 11400000, guid: b8822c944079fe64cad1eeb9e73c4e2d, type: 2}
+    drink2: {fileID: 11400000, guid: 2c28348832f901c468f8dd91ed19c468, type: 2}

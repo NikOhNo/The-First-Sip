@@ -12,7 +12,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b806f51a147ccb34fb3f44503d5690b0, type: 3}
   m_Name: 7. Cosmic
   m_EditorClassIdentifier: 
-  EffectName: 
+  EffectName: Cosmic Journey's End
   Duration: 0
-  FlavorText: 
-  Recipes: []
+  FlavorText: All that waiting, and this is it?
+  Recipes:
+  - drink1: {fileID: 11400000, guid: a2553786b6dc56d4c9344054659c9aaf, type: 2}
+    drink2: {fileID: 11400000, guid: b7977638c14bd6d44a7a8f5e8e480ef7, type: 2}
+  - drink1: {fileID: 11400000, guid: a1052ec3a267a6347952447e7e38ffd5, type: 2}
+    drink2: {fileID: 11400000, guid: 1129be3128d3d9c449dec511df1d5990, type: 2}
+  - drink1: {fileID: 11400000, guid: d804d14758bf10f438e47db446f1611e, type: 2}
+    drink2: {fileID: 11400000, guid: b7977638c14bd6d44a7a8f5e8e480ef7, type: 2}
+  - drink1: {fileID: 11400000, guid: b7977638c14bd6d44a7a8f5e8e480ef7, type: 2}
+    drink2: {fileID: 11400000, guid: b7977638c14bd6d44a7a8f5e8e480ef7, type: 2}
+  - drink1: {fileID: 11400000, guid: b7977638c14bd6d44a7a8f5e8e480ef7, type: 2}
+    drink2: {fileID: 11400000, guid: d9bbb06543f679a40a784716435c374c, type: 2}

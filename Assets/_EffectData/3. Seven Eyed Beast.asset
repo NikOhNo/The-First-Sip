@@ -12,7 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b806f51a147ccb34fb3f44503d5690b0, type: 3}
   m_Name: 3. Seven Eyed Beast
   m_EditorClassIdentifier: 
-  EffectName: 
+  EffectName: Seven Eyed Beast
   Duration: 0
-  FlavorText: 
-  Recipes: []
+  FlavorText: Wicked and weary, rest your head and give your heart to me
+  Recipes:
+  - drink1: {fileID: 11400000, guid: 9d8db76544ad7384f8c6d0f9f72f0d75, type: 2}
+    drink2: {fileID: 11400000, guid: 9d8db76544ad7384f8c6d0f9f72f0d75, type: 2}
+  - drink1: {fileID: 11400000, guid: 1129be3128d3d9c449dec511df1d5990, type: 2}
+    drink2: {fileID: 11400000, guid: 2c28348832f901c468f8dd91ed19c468, type: 2}
+  - drink1: {fileID: 11400000, guid: 2d115fcceec15aa4cb9209a999da4c4f, type: 2}
+    drink2: {fileID: 11400000, guid: 2c28348832f901c468f8dd91ed19c468, type: 2}

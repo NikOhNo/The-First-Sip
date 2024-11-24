@@ -12,7 +12,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b806f51a147ccb34fb3f44503d5690b0, type: 3}
   m_Name: 16. Spiralling
   m_EditorClassIdentifier: 
-  EffectName: 
+  EffectName: Spiralling Melancholy
   Duration: 0
-  FlavorText: 
-  Recipes: []
+  FlavorText: How far can you delve into the darkness, down, down, down
+  Recipes:
+  - drink1: {fileID: 11400000, guid: d3ed947187a5e6a47b21373e56268e7f, type: 2}
+    drink2: {fileID: 11400000, guid: d3ed947187a5e6a47b21373e56268e7f, type: 2}
+  - drink1: {fileID: 11400000, guid: d3ed947187a5e6a47b21373e56268e7f, type: 2}
+    drink2: {fileID: 11400000, guid: a1052ec3a267a6347952447e7e38ffd5, type: 2}
+  - drink1: {fileID: 11400000, guid: d3ed947187a5e6a47b21373e56268e7f, type: 2}
+    drink2: {fileID: 11400000, guid: a260cc9f216e128458aad4e066d7c24b, type: 2}
+  - drink1: {fileID: 11400000, guid: d3ed947187a5e6a47b21373e56268e7f, type: 2}
+    drink2: {fileID: 11400000, guid: d9bbb06543f679a40a784716435c374c, type: 2}
+  - drink1: {fileID: 11400000, guid: a1052ec3a267a6347952447e7e38ffd5, type: 2}
+    drink2: {fileID: 11400000, guid: 2c28348832f901c468f8dd91ed19c468, type: 2}
+  - drink1: {fileID: 11400000, guid: d804d14758bf10f438e47db446f1611e, type: 2}
+    drink2: {fileID: 11400000, guid: d804d14758bf10f438e47db446f1611e, type: 2}
+  - drink1: {fileID: 11400000, guid: a260cc9f216e128458aad4e066d7c24b, type: 2}
+    drink2: {fileID: 11400000, guid: 2c28348832f901c468f8dd91ed19c468, type: 2}
+  - drink1: {fileID: 11400000, guid: d9bbb06543f679a40a784716435c374c, type: 2}
+    drink2: {fileID: 11400000, guid: d9bbb06543f679a40a784716435c374c, type: 2}
