@@ -214,6 +214,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 31abf54a1af89524db1b1549de2450cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  effectData: {fileID: 0}
+  effectData: {fileID: 11400000, guid: 99252e8ae36dc9841a95d8d570a0c859, type: 2}
   blackScreen: {fileID: 3903492392779773271}
   fleshBlob: {fileID: 4582516829362260495}
