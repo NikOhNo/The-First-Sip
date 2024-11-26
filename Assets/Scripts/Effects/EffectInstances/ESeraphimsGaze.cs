@@ -14,16 +14,17 @@ public class ESeraphimsGaze : Effect
     {
         screenBrighten.SetActive(true);
         textBody.gameObject.SetActive(true);
-        throw new System.NotImplementedException();
     }
 
     void Update()
     {
-        if(currentLetterIndex <= annoyingAssTextScroll.Length)
+        if (currentLetterIndex < annoyingAssTextScroll.Length)
+        {
             textBody.text += annoyingAssTextScroll[currentLetterIndex];
+            currentLetterIndex++;
+        }
         else
             CompleteEffect();
-        throw new System.NotImplementedException();
     }
 
     public override void CompleteEffect()

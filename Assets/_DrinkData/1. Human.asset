@@ -15,6 +15,6 @@ MonoBehaviour:
   DrinkName: Human Nature Rum
   FlavorText: 
   Sprite: {fileID: 21300000, guid: e4a8a4ae01d217446b465d2263b8366e, type: 3}
-  Mind: 0
-  Body: 0
-  Soul: 0
+  Mind: 50
+  Body: 25
+  Soul: 25

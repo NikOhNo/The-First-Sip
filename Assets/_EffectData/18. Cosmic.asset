@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 18. Cosmic
   m_EditorClassIdentifier: 
   EffectName: Cosmic Insignificance
-  Duration: 0
+  Duration: 100
   FlavorText: What is man to a star
   Recipes:
   - drink1: {fileID: 11400000, guid: d3ed947187a5e6a47b21373e56268e7f, type: 2}

@@ -15,6 +15,6 @@ MonoBehaviour:
   DrinkName: Constellation Cider
   FlavorText: 
   Sprite: {fileID: 21300000, guid: 0b9d056e1b71bfd45a9c44f1050ecde9, type: 3}
-  Mind: 0
-  Body: 0
-  Soul: 0
+  Mind: 15
+  Body: 15
+  Soul: 60

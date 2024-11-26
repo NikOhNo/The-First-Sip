@@ -496,6 +496,81 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 911650735}
   m_CullTransparentMesh: 1
+--- !u!1 &927220249
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 927220252}
+  - component: {fileID: 927220251}
+  - component: {fileID: 927220250}
+  m_Layer: 0
+  m_Name: PlayerInput
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &927220250
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 927220249}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3029e0c7cbe927c4aacc3acae95517b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &927220251
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 927220249}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Actions: {fileID: -944628639613478452, guid: d89b395fd0975894eaab01d4690f80e6, type: 3}
+  m_NotificationBehavior: 0
+  m_UIInputModule: {fileID: 0}
+  m_DeviceLostEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_DeviceRegainedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ControlsChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ActionEvents: []
+  m_NeverAutoSwitchControlSchemes: 0
+  m_DefaultControlScheme: 
+  m_DefaultActionMap: Player
+  m_SplitScreenIndex: -1
+  m_Camera: {fileID: 0}
+--- !u!4 &927220252
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 927220249}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 416.195, y: 156.59598, z: -5.335144}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &943456308
 GameObject:
   m_ObjectHideFlags: 0
@@ -693,7 +768,7 @@ MonoBehaviour:
         m_MethodName: StageDrink
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 11400000, guid: d3ed947187a5e6a47b21373e56268e7f, type: 2}
+          m_ObjectArgument: {fileID: 11400000, guid: b7977638c14bd6d44a7a8f5e8e480ef7, type: 2}
           m_ObjectArgumentAssemblyTypeName: DrinkDataSO, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -1320,7 +1395,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4321832626999596105, guid: dd9ae092da78308469f2ef0a3324dbd9, type: 3}
       propertyPath: effectPrefabs.Array.size
-      value: 1
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4321832626999596105, guid: dd9ae092da78308469f2ef0a3324dbd9, type: 3}
       propertyPath: effectPrefabs.Array.data[0]
@@ -1329,23 +1404,23 @@ PrefabInstance:
     - target: {fileID: 4321832626999596105, guid: dd9ae092da78308469f2ef0a3324dbd9, type: 3}
       propertyPath: effectPrefabs.Array.data[1]
       value: 
-      objectReference: {fileID: 4400768085811493453, guid: 44b3d0552a7595149984432b5dcf41b3, type: 3}
+      objectReference: {fileID: 4094709057593280627, guid: 3899db9be20d8224aa0398e6d27dd294, type: 3}
     - target: {fileID: 4321832626999596105, guid: dd9ae092da78308469f2ef0a3324dbd9, type: 3}
       propertyPath: effectPrefabs.Array.data[2]
       value: 
-      objectReference: {fileID: 7953947661166972538, guid: 5b1167a451022ee4c8d6ca481625edd7, type: 3}
+      objectReference: {fileID: 7144744979861107366, guid: 1ca9d2f31f3d40c4f8c35e9a8f250220, type: 3}
     - target: {fileID: 4321832626999596105, guid: dd9ae092da78308469f2ef0a3324dbd9, type: 3}
       propertyPath: effectPrefabs.Array.data[3]
       value: 
-      objectReference: {fileID: 7144744979861107366, guid: 1ca9d2f31f3d40c4f8c35e9a8f250220, type: 3}
+      objectReference: {fileID: 7953947661166972538, guid: 5b1167a451022ee4c8d6ca481625edd7, type: 3}
     - target: {fileID: 4321832626999596105, guid: dd9ae092da78308469f2ef0a3324dbd9, type: 3}
       propertyPath: effectPrefabs.Array.data[4]
       value: 
-      objectReference: {fileID: 4094709057593280627, guid: 3899db9be20d8224aa0398e6d27dd294, type: 3}
+      objectReference: {fileID: 4400768085811493453, guid: 44b3d0552a7595149984432b5dcf41b3, type: 3}
     - target: {fileID: 4321832626999596105, guid: dd9ae092da78308469f2ef0a3324dbd9, type: 3}
       propertyPath: effectPrefabs.Array.data[5]
       value: 
-      objectReference: {fileID: 2193863132497266533, guid: 07c1997627c151049aeac1c0d767db71, type: 3}
+      objectReference: {fileID: 221680210465688149, guid: cd68802137b1be74da84034826a91c69, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1430,3 +1505,4 @@ SceneRoots:
   - {fileID: 951359670}
   - {fileID: 7764975}
   - {fileID: 943456311}
+  - {fileID: 927220252}

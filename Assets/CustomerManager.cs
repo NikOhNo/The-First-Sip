@@ -15,6 +15,12 @@ public class CustomerManager : MonoBehaviour
 
     public Customer CurrentCustomer()
     {
-        return customerQueue.Peek().GetComponent<Customer>();
+        if (customerQueue.Count > 0)
+            return customerQueue.Peek().GetComponent<Customer>();
+        else
+        {
+            Debug.LogWarning("No customers in queue");
+            return null;
+        } 
     }
 }

@@ -15,6 +15,6 @@ MonoBehaviour:
   DrinkName: Perception Tequila
   FlavorText: 
   Sprite: {fileID: 21300000, guid: 0c8c2b72a824167469587d22078f7384, type: 3}
-  Mind: 0
-  Body: 0
-  Soul: 0
+  Mind: 60
+  Body: 15
+  Soul: 15

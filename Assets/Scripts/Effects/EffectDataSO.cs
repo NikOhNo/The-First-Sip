@@ -8,6 +8,7 @@ public class EffectDataSO : ScriptableObject
     public string EffectName;
     public float Duration;
     public string FlavorText;
+    public Sprite Sprite;
 
     public List<Recipe> Recipes = new();
 }

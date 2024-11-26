@@ -32,18 +32,21 @@ public class InputManager : MonoBehaviour
         {
             Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             Vector2 rayOrigin = new Vector2(mousePosition.x, mousePosition.y);
-            GameObject objectHit = Physics2D.Raycast(rayOrigin, Vector2.zero).collider.gameObject;
+            RaycastHit2D hit = Physics2D.Raycast(rayOrigin, Vector2.zero);
 
-            if (objectHit)
+            if (hit)
             {
-                if (objectHit.tag == "ForbiddenFruit")
+                if (hit.collider.gameObject.tag == "ForbiddenFruit")
                 {
+                    Debug.Log("WFUCKING WOKRRRKKK");
                     Application.Quit();
                 }
-                if (objectHit.tag == "Drink")
+                if (hit.collider.gameObject.tag == "Drink")
                 {
                     Debug.Log("yayasdfasdf");
                 }
+                else
+                    return;
             }
         }
     }

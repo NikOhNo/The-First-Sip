@@ -12,7 +12,6 @@ public class EGardenOFEden : Effect
         transform.position = fruitSpawnLocation;
         gameObject.GetComponent<SpriteRenderer>().enabled = true;
         timer = effectData.Duration;
-        throw new System.NotImplementedException();
     }
 
     void Update()
@@ -21,7 +20,6 @@ public class EGardenOFEden : Effect
         {
             CompleteEffect();
         }
-        throw new System.NotImplementedException();
     }
 
     public override void CompleteEffect()

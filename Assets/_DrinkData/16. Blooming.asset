@@ -15,6 +15,6 @@ MonoBehaviour:
   DrinkName: Blooming Beer
   FlavorText: 
   Sprite: {fileID: 21300000, guid: 071d25d60030099469bb3e35cbc26db1, type: 3}
-  Mind: 0
-  Body: 0
-  Soul: 0
+  Mind: 35
+  Body: 40
+  Soul: 25

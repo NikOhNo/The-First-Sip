@@ -15,6 +15,6 @@ MonoBehaviour:
   DrinkName: Rasberry Liquour
   FlavorText: 
   Sprite: {fileID: 21300000, guid: 8ddbe297068f6a44bb3d2fead989d88f, type: 3}
-  Mind: 0
-  Body: 0
-  Soul: 0
+  Mind: 30
+  Body: 40
+  Soul: 30

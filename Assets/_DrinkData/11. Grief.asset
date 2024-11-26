@@ -15,6 +15,6 @@ MonoBehaviour:
   DrinkName: Grief Gin
   FlavorText: 
   Sprite: {fileID: 21300000, guid: ecfb88acea50d2d47aabe30c8769199b, type: 3}
-  Mind: 0
-  Body: 0
-  Soul: 0
+  Mind: 60
+  Body: 30
+  Soul: 10

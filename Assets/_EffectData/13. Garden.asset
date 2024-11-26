@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 13. Garden
   m_EditorClassIdentifier: 
   EffectName: Garden of Eden
-  Duration: 0
+  Duration: 15
   FlavorText: Bequeathed to the first, passed to the second, and burned for the third
   Recipes:
   - drink1: {fileID: 11400000, guid: 9d8db76544ad7384f8c6d0f9f72f0d75, type: 2}

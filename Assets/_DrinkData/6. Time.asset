@@ -15,6 +15,6 @@ MonoBehaviour:
   DrinkName: Time Absinthe
   FlavorText: 
   Sprite: {fileID: 21300000, guid: 04a1094b699826747acbbe422cf61c1f, type: 3}
-  Mind: 0
+  Mind: 20
   Body: 0
-  Soul: 0
+  Soul: 80

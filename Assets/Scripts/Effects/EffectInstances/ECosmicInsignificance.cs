@@ -3,38 +3,34 @@ using UnityEngine;
 
 public class ECosmicInsignificance : Effect
 {
-    private float mainCameraSize;
+    private Camera mainCamera;
     [SerializeField] private float targetZoomMultiplier;
     private float targetZoom;
     private float defaultZoom;
-    private float zoomSpeed = 1f;
+    private float zoomSpeed = 0.25f;
+    private bool canScroll = false;
     void Awake()
     {
-        mainCameraSize = GameObject.Find("Main Camera").GetComponent<Camera>().orthographicSize;
-        defaultZoom = mainCameraSize;
+        mainCamera = GameObject.Find("Main Camera").GetComponent<Camera>();
+        defaultZoom = mainCamera.orthographicSize;
         targetZoom = defaultZoom * targetZoomMultiplier;
-        throw new System.NotImplementedException();
+        StartCoroutine(ZoomOut());
     }
 
     void Update()
     {
-        if (mainCameraSize <= targetZoom)
-        {
-            mainCameraSize += zoomSpeed;
-        }
-        else
+        if (canScroll)
         {
             float scrollInput = Input.GetAxis("Mouse ScrollWheel");
 
             if (scrollInput != 0f)
             {
                 // Adjust the orthographic size for orthographic cameras
-                mainCameraSize -= scrollInput * zoomSpeed;
-                if (mainCameraSize <= defaultZoom)
+                mainCamera.orthographicSize -= scrollInput * (zoomSpeed * 4);
+                if (mainCamera.orthographicSize <= defaultZoom)
                     CompleteEffect();
             }
         }
-        throw new System.NotImplementedException();
     }
 
     public override void CompleteEffect()
@@ -42,4 +38,15 @@ public class ECosmicInsignificance : Effect
         Destroy(gameObject);
         throw new System.NotImplementedException();
     }
+
+    private IEnumerator ZoomOut()
+    {
+        while (mainCamera.orthographicSize <= targetZoom)
+        {
+            mainCamera.orthographicSize += zoomSpeed;
+            yield return new WaitForSeconds(0.05f);
+        }
+        canScroll = true;
+    }
 }
+

@@ -15,6 +15,6 @@ MonoBehaviour:
   DrinkName: Flowering Grenadine
   FlavorText: 
   Sprite: {fileID: 21300000, guid: 3cd3b4e2d020bb746958589edbb204f0, type: 3}
-  Mind: 0
-  Body: 0
-  Soul: 0
+  Mind: 15
+  Body: 55
+  Soul: 30

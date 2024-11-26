@@ -15,6 +15,6 @@ MonoBehaviour:
   DrinkName: Blood-Baked Rum
   FlavorText: 
   Sprite: {fileID: 21300000, guid: 9f8b645aeb435804b8cb0070a9f92a32, type: 3}
-  Mind: 0
-  Body: 0
-  Soul: 0
+  Mind: 10
+  Body: 80
+  Soul: 10

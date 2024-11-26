@@ -15,6 +15,6 @@ MonoBehaviour:
   DrinkName: Ethereal Absinthe
   FlavorText: 
   Sprite: {fileID: 21300000, guid: 296ee00f7b9b3604aba09210c181786d, type: 3}
-  Mind: 0
-  Body: 0
-  Soul: 0
+  Mind: 15
+  Body: 10
+  Soul: 75

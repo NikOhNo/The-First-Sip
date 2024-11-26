@@ -33,6 +33,7 @@ public class DrinkManager : MonoBehaviour
 
         drink2 = drink1;
         drink1 = newDrink;
+        CombineDrinks();
     }
 
     /// <summary>
@@ -45,7 +46,16 @@ public class DrinkManager : MonoBehaviour
             return;
         }
 
+        Customer currentCustomer = CustomerManager.Instance.CurrentCustomer();
+        if (currentCustomer != null)
+            currentCustomer.GetComponent<Customer>().GiveDrink();
+
         var newEffect = EffectManager.Instance.MakeEffect(drink1, drink2);
-        Debug.Log("Made Effect: " + newEffect.EffectName);
+        if (newEffect)
+        {
+            Debug.Log("Made Effect: " + newEffect.EffectName);  
+        }
+        drink1 = null;
+        drink2 = null;
     }
 }

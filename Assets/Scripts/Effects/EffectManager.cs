@@ -41,7 +41,7 @@ public class EffectManager : MonoBehaviour
     {
         foreach (Effect effect in effectPrefabs.Select(prefab => prefab.GetComponent<Effect>()))
         {
-            foreach (var recipe in effect.effectData.Recipes)
+            foreach (var recipe in effect.effectData.Recipes)   
             {
                 if (recipe.CanMakeWith(drink1, drink2))
                 {
@@ -50,7 +50,7 @@ public class EffectManager : MonoBehaviour
             }
         }
 
-        Debug.LogError($"Could not find effect with recipe: \"{drink1.DrinkName}\" and \"{drink2.DrinkName}\"");
+        Debug.LogWarning($"Could not find effect with recipe: \"{drink1.DrinkName}\" and \"{drink2.DrinkName}\"");
         return null;
     }
 

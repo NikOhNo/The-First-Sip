@@ -46,7 +46,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14f2d86d8561cff44bc9838d2711cfee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  effectData: {fileID: 0}
+  effectData: {fileID: 11400000, guid: a9cec1b4165160e4da888669f6b219d3, type: 2}
   screenBrighten: {fileID: 4663804948677150336}
   textBody: {fileID: 4046055557885437697}
 --- !u!1 &4663804948677150336

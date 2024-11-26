@@ -15,6 +15,6 @@ MonoBehaviour:
   DrinkName: Heavenly Brew
   FlavorText: 
   Sprite: {fileID: 21300000, guid: 813d2392105708d41b006f5d47fde548, type: 3}
-  Mind: 0
-  Body: 0
-  Soul: 0
+  Mind: 45
+  Body: 5
+  Soul: 50

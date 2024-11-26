@@ -15,6 +15,6 @@ MonoBehaviour:
   DrinkName: Life Whiskey
   FlavorText: 
   Sprite: {fileID: 21300000, guid: fa9f3632000591042a398117b0f4e225, type: 3}
-  Mind: 0
-  Body: 0
-  Soul: 0
+  Mind: 60
+  Body: 30
+  Soul: 10

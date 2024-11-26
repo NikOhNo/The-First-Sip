@@ -15,6 +15,6 @@ MonoBehaviour:
   DrinkName: Death Wine
   FlavorText: 
   Sprite: {fileID: 21300000, guid: 7222e881b017a574fac3ac8331224a5b, type: 3}
-  Mind: 0
-  Body: 0
-  Soul: 0
+  Mind: 55
+  Body: 35
+  Soul: 10

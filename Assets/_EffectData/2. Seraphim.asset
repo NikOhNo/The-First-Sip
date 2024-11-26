@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 2. Seraphim
   m_EditorClassIdentifier: 
   EffectName: Seraphim's Gaze
-  Duration: 0
+  Duration: 5
   FlavorText: O' beast of whim and worship, name my sins
   Recipes:
   - drink1: {fileID: 11400000, guid: a2553786b6dc56d4c9344054659c9aaf, type: 2}

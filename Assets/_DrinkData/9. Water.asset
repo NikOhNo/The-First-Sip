@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DrinkName: Water
   FlavorText: 
+  Mind: 20
+  Body: 75
+  Soul: 5
   Sprite: {fileID: 21300000, guid: f3fe71156e2ba1340bc98cd3aa6e3fff, type: 3}
-  Mind: 0
-  Body: 0
-  Soul: 0
